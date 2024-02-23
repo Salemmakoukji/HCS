@@ -1,53 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team List</title>
-    <style>
-        /* Basic styling for the table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-        }
-        .team-image {
-            max-width: 100px;
-            height: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teams List</title>
+<style>
+  body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6495ED, #FFFFFF); /* Gradient background */
+    height: 98vh;
+    width: 98vw;
+  }
+  .container {
+    max-width: 90%;
+    margin: 5% 5%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo img {
+    max-width: 200px;
+    height: auto;
+  }
+  .team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns items to each end of the container */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  .team img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+  }
+  .team-info {
+    flex-grow: 1;
+  }
+  h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+  }
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .soldiers-left {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+</style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Team</th>
-                <th>Picture</th>
-                <th>Name</th>
-                <th>Soldiers Left</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Team 1 -->
-            <tr>
-                <td>Alpha</td>
-                <td><img class="team-image" src="team1.jpg" alt="Team Alpha"></td>
-                <td>Team Alpha</td>
-                <td>50</td>
-            </tr>
-            <!-- Team 2 -->
-            <tr>
-                <td>Bravo</td>
-                <td><img class="team-image" src="team2.jpg" alt="Team Bravo"></td>
-                <td>Team Bravo</td>
-                <td>42</td>
-            </tr>
-            <!-- Repeat for other teams -->
-        </tbody>
-    </table>
+
+<div class="container">
+  <div class="logo">
+    <img src="yourlogo.png" alt="Your Logo">
+  </div>
+  <div class="team">
+    <img src="team1.jpg" alt="Alpha">
+    <div class="team-info">
+      <h2>Team 1</h2>
+      <p><span>100</span> <span class="soldiers-left">Soldiers Left</span></p>
+    </div>
+</div>
+<div class="team">
+  <img src="team2.jpg" alt="Beta">
+  <div class="team-info">
+    <h2>Team 1</h2>
+    <p><span>100</span> <span class="soldiers-left">Soldiers Left</span></p>
+  </div>
+</div>
+<div class="team">
+  <img src="team3.jpg" alt="Gamma">
+  <div class="team-info">
+    <h2>Team 1</h2>
+    <p><span>100</span> <span class="soldiers-left">Soldiers Left</span></p>
+  </div>
+</div>
+<div class="team">
+  <img src="team4.jpg" alt="Delta">
+  <div class="team-info">
+    <h2>Team 1</h2>
+    <p><span>100</span> <span class="soldiers-left">Soldiers Left</span></p>
+  </div>
+</div>
+<script>
+
+</script>
+
 </body>
 </html>
